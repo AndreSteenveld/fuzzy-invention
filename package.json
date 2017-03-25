@@ -41,6 +41,7 @@
     "packages": "src/lib"
   },
   "devDependencies": {
+    "bourbon": "^4.3.3",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
     "del": "^2.2.0",

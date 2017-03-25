@@ -5,11 +5,15 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   connect = require('gulp-connect'),
   sass = require('gulp-sass'),
-  sourcemaps = require('gulp-sourcemaps');
+  sourcemaps = require('gulp-sourcemaps'),
+  
+  bourbon = require( "bourbon" );
 
 var sassOptions = {
   errLogToConsole: true,
-  outputStyle: 'expanded'
+  outputStyle: 'expanded',
+  includePaths: [ ]
+	.concat( bourbon.includePaths )
 };
 
 // Compile SASS with sourcemaps + livereload.
