@@ -127,6 +127,8 @@ typings/
 # Project specific ignores
 #
 build/
+!build/config.js
+
 docs/
 src/lib/
 src/css/

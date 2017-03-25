@@ -6,5 +6,6 @@ var gulp = require('gulp'),
 // HTML livereload.
 gulp.task('html', function () {
   gulp.src(global.paths.html)
+    .pipe(gulp.dest(global.paths.build))
     .pipe(connect.reload());
 });

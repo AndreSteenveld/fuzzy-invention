@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 // Start local dev server.
 gulp.task('connect', function () {
   connect.server({
-    root: global.paths.src,
+    root: global.paths.build,
     livereload: true
   });
 });

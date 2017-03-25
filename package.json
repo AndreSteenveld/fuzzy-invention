@@ -87,9 +87,9 @@
   },
   "jspm": {
     "directories": {
-      "baseURL": "src",
+      "baseURL": "build",
       "doc": "docs",
-      "packages": "src/lib",
+      "packages": "build/lib",
       "test": "test"
     },
     "devDependencies": {

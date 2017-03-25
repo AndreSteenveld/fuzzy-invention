@@ -19,7 +19,7 @@ global.paths = {
   // HTML sources.
   'html': './src/*.html',
   // JS sources.
-  'js': './src/js/**/*.js',
+  'js': './src/**/*.js',
   // SASS sources.
   'sass': './src/scss/**/*.scss',
   // Image sources.
@@ -27,9 +27,10 @@ global.paths = {
   // Sources folder.
   'src': './src',
   // Compiled CSS folder.
-  'css': './src/css',
+  'css': './build/css',
   // Distribution folder.
-  'dist': './dist'
+  'dist': './dist',
+  'build': "./build"
 };
 
 // Require all tasks in the 'gulp' folder.
