@@ -1,3 +1,15 @@
+@import "bourbon";
+@import "normalize";
+@import "include-media";
+@import "neat";
+
+@include normalize();
+
 body {
-  background-color: #fff;
+  background-color: #DDD;
+}
+
+h1 {
+	@include position( absolute, 50% 50% );
+	@include padding( 50px );
 }
