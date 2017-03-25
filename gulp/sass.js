@@ -17,20 +17,32 @@ function resolve_package_lib_dir( package_json_path ){
 
   var package_path = path.dirname( require.resolve( package_json_path ) ),
      package_json = require( package_json_path );
-	 
+
   return [ path.join( package_path, package_json.directories.lib ) ];
 	
+}
+
+function resolve_packge_dir( package_json_path, suffix ){
+  
+  var package_path = path.dirname( require.resolve( package_json_path ) );
+  
+  return [ path.join( package_path, suffix ) ];
 }
   
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded',
   includePaths: [ ]
-	.concat( bourbon.includePaths )
-	.concat( neat.includePaths )
-	.concat([ include_media.includePath ])
-	.concat( resolve_package_lib_dir( "normalize-scss/package.json" ) )
+    .concat( bourbon.includePaths )
+    .concat( neat.includePaths )
+    .concat([ include_media.includePath ])
+    .concat([ resolve_packge_dir( "sassy-lists/package.json", "dist" ) ])
+    .concat( resolve_package_lib_dir( "normalize-scss/package.json" ) )
+    .concat([ path.join( __dirname, "..", "build", "lib", "npm", "foundation-sites@6.3.1", "scss" ) ])
 };
+
+console.log( "Sass include paths are :: " );
+console.log( "\t" + sassOptions.includePaths.join( "\n\t" ) );
 
 // Compile SASS with sourcemaps + livereload.
 gulp.task('sass', function () {

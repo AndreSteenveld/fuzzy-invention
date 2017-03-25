@@ -93,6 +93,9 @@
       "packages": "build/lib",
       "test": "test"
     },
+    "dependencies": {
+      "foundation-sites": "npm:foundation-sites@^6.3.1"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",

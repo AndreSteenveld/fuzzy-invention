@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ES6 + JSPM + Gulp</title>
+    <title>Fancy GUI</title>
     <link rel="stylesheet" href="css/app.css" charset="utf-8">
 </head>
 <body>
-    <h1>Hello JSPM!</h1>
-    <h2>THe current env is {{ environment | safe }}</h2>
-
+    
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text">Site Title</li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </div>
+            
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><input type="search" placeholder="Search"></li>
+                    <li><button type="button" class="button">Search</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+      <div class="sidebar-layout"><div class="sidebar-layout__sidebar example__column--empty example__column--fancy"></div><div class="sidebar-layout__main"><div class="product-gallery"><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div><div class="product-gallery__item example__column--empty-small example__column--fancy"></div></div></div></div>
+      
+    
+    <footer>Media control here</footer>
+        
     <script src="lib/system.js"></script>
     <script src="config.js"></script>
     <script>System.import('./index.js')</script>
